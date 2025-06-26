@@ -271,7 +271,8 @@ if (allowTracking) {
     const msg = `Hola, vengo por el bono de bienvenida! Mi código promocional es: ${uuid}
     Este es mi nombre para el usuario: ${name}`;
 
-    window.location.href = `https://wa.me/${number}?text=${encodeURIComponent(msg)}`;
+    window.location.href = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(msg)}`;
+
   });
 
 
